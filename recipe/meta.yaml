@@ -1,5 +1,5 @@
 {% set name = "redbird" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/redbird-{{ version }}.tar.gz
-  sha256: 7ed1268f8e87088642b83665ef6ea64eb7c7bcb5b2fa4887b2e976c282b38aea
+  sha256: 59719c0e7cd3ceed092d4dfd631476ef3797ed4b6100e6bd83f758643ffd7c4b
 
 build:
   noarch: python
