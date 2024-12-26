@@ -20,7 +20,8 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - pydantic
+    # Need to use pydantic <2 due to upstream bug https://github.com/Miksus/red-bird/issues/46
+    - pydantic <2
     - python >={{ python_min }}
     - typing-extensions
 
