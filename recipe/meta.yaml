@@ -12,13 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=45
+    - setuptools_scm >=6.2
+    - tomli
   run:
     # Need to use pydantic <2 due to upstream bug https://github.com/Miksus/red-bird/issues/46
     - pydantic <2
